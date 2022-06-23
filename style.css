@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    
+}
+body{
+    margin:0;
+    background-color: aliceblue;
+}
+
+/* :root can be useful for declaring global CSS variables */
+:root{
+    --cell-size:100px;
+    --mark-size: calc(var(--cell-size) * .9);  /* Will be the 90% of the size of the cell (90px) */
+}
+
+/* ********************* Title and score table ********************* */
+.title{
+    margin:15px;
+    border: 2px solid black;
+    border-radius: 15px;  
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;   
+    font-size: 28px;
+    letter-spacing: 6px;
+    text-shadow: 0px 0px 6px rgb(255, 255, 255);
+    background-color: rgba(44, 44, 43, 0.37);
+    box-shadow: -5px 5px 10px 0px rgba(22, 22, 22, 0.897);
+}
+#score-table{
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-around;   
+}
+#score{
+    margin: 10px;
+}
+h2, .point{
+    font-size: 36px;
+}
+
+/* ********************* Board of the game and the background ********************* */
+.background{
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.board{
+    width:300px;
+    height: 300px;
+    position: absolute;
+    bottom: 350px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    background: linear-gradient(45deg, rgb(58, 105, 128) 50%, rgb(51, 195, 252) 100%);
+    box-shadow: 0px 0px 220px 0px rgba(0,0,0,0.75);
+}
+
+/* ********************* Size and behavior of the cell ********************* */
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid black;
+    cursor: pointer;
+}
+.cell.x{
+    background-image: url(img/X-Player.jpg);   
+}
+.board.x .cell:not(.x):not(.circle):hover{
+    background-image: url(img/X-PLAYER.jpg);
+}
+.cell.circle{
+    background-image: url(img/O-Player.jpg);   
+}
+.board.circle .cell:not(.x):not(.circle):hover{
+    background-image: url(img/O-PLAYER.jpg);
+}
+
+/* ********************* Winning Message ********************* */
+.winning-message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.685);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+}
+.winning-message button{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left:43%;
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+.winning-message button:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.winning-message.show{
+    display: flex;
+}
+#textWin{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left:40%;
+}
+
+/* ********************* New Game Button ********************* */
+.newGameButton{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(44, 44, 43, 0.37);
+    box-shadow: -5px 5px 10px 0px rgba(22, 22, 22, 0.897);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 6px rgb(255, 255, 255);
+}
+.newGameButton:hover{
+    transform: scale(1.2);
+}
+.newGameButton:active{
+    transform: scale(.8);
+}
+
+/* ********************* Canvas for the fireworks ********************* */
+#canvas{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+

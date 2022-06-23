@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="title">
+      <p>Tic Tac Toe</p>
+    </div>
+    <div id="score-table">
+      <div id="score">
+        <h2>X</h2>
+        <p class="counter-X point">(..)</p>
+      </div>
+      <div id="score">
+        <h2>DRAW</h2>
+        <p class="counter-draw point">(..)</p>
+      </div>
+      <div id="score">
+        <h2>O</h2>
+        <p class="counter-O point">(..)</p>
+      </div>
+    </div>
+    <div class="background">
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <button class="newGameButton" onclick="startGame()">New Game</button>
+    </div>
+    <div class="winning-message" id="winningMessage">
+      <canvas id="canvas"></canvas>
+      <div id="textWin" data-winning-message-text></div>
+      <button id="restartButton">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
