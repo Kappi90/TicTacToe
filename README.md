@@ -4,9 +4,19 @@ Simple TicTacToe game made with HTML, CSS &amp; JavaScript
 
 # Preview
 
-![DrawGame](https://user-images.githubusercontent.com/76778662/175282632-a665aa3a-2424-40c4-9fc2-15fcf684b49e.png)
-![MarkPlayer](https://user-images.githubusercontent.com/76778662/175282635-e1dab33d-0a71-4acd-af2c-1774c8b13c96.png)
-![ScoreGame](https://user-images.githubusercontent.com/76778662/175282638-d01a2a03-cf88-44bc-a92d-6295de82deb3.png)
-![StartGame](https://user-images.githubusercontent.com/76778662/175282641-35afe22b-8d47-4358-81fd-b0aeaa885bee.png)
-![WinGame-O](https://user-images.githubusercontent.com/76778662/175282642-73a572ac-ccb6-436e-a1e4-c02458c5d6f6.png)
-![WinGame-X](https://user-images.githubusercontent.com/76778662/175282648-cae4eb07-308c-4712-9a8b-c16301cf5eac.png)
+Start Game
+![StartGame](https://user-images.githubusercontent.com/76778662/175282807-ce1bed5b-1d94-4e9d-95b5-b75acb41fd90.png)
+
+
+Player Mark
+![MarkPlayer](https://user-images.githubusercontent.com/76778662/175282854-768e7f8e-a170-4b80-a9dd-46e29b521294.png)
+
+
+Win or Draw 
+![WinGame-O](https://user-images.githubusercontent.com/76778662/175282939-a36e4ed3-886a-438f-82aa-ff61540fe0d0.png)
+![WinGame-X](https://user-images.githubusercontent.com/76778662/175282955-0b4442a4-5577-4d95-85b5-7cd119d3f5ea.png)
+![DrawGame](https://user-images.githubusercontent.com/76778662/175282971-3a4d48e4-78c2-4294-9242-817d18d7deed.png)
+
+
+Score Game
+![ScoreGame](https://user-images.githubusercontent.com/76778662/175283037-b8454103-e89b-4ee4-8675-dab40623ff09.png)
